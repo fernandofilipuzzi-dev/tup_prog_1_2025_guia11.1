@@ -8,6 +8,8 @@ namespace Ejercicio4.Models
         string jugador2;
         int setGanados2;
 
+        public int NumeroSetsRegistrados;
+
         public void RegistrarJugadores(string nombre1, string nombre2)
         {
             jugador1 = nombre1;
@@ -19,6 +21,8 @@ namespace Ejercicio4.Models
         {
             setGanados1 += resultado1;
             setGanados2 += resultado2;
+
+            NumeroSetsRegistrados++;
         }
         public string DeterminarGanador()
         {

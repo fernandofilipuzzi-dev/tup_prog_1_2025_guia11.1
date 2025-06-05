@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Ejercicio1.Models
 {
     internal class Servicio
@@ -28,7 +23,7 @@ namespace Ejercicio1.Models
             {
                 Maximo = valor;
             }
-            if (Contador == 1 || valor > Minimo)
+            if (Contador == 1 || valor < Minimo)
             {
                 Minimo = valor;
             }
