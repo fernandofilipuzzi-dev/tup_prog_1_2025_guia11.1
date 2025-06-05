@@ -42,7 +42,7 @@ namespace Ejercicio1
         {
             if (servicio.Contador > 0)
             {
-                lbPromedio.Text=$"{servicio.CalcularPromedio():f2}";
+                lbPromedio.Text = $"{servicio.CalcularPromedio():f2}";
             }
             else
             {
@@ -54,7 +54,7 @@ namespace Ejercicio1
         {
             if (servicio.Contador > 0)
             {
-                lbCantidad.Text=$"{servicio.Contador}";
+                lbCantidad.Text = $"{servicio.Contador}";
             }
             else
             {

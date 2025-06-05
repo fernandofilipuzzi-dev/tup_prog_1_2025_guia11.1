@@ -138,12 +138,12 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(71, 46);
+            label8.Location = new Point(99, 46);
             label8.Margin = new Padding(5, 0, 5, 0);
             label8.Name = "label8";
-            label8.Size = new Size(109, 21);
+            label8.Size = new Size(81, 21);
             label8.TabIndex = 1;
-            label8.Text = "Valor máximo:";
+            label8.Text = "Promedio:";
             // 
             // btnMostrarPromedio
             // 
