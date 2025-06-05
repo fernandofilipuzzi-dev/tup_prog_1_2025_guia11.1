@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio4_Tenis", "Ejercic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio5_Bisiesto", "Ejercicio5\Ejercicio5_Bisiesto.csproj", "{036A1E4C-C771-4B98-92CE-23E123415946}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio6_Encuesta", "Ejercicio6\Ejercicio6_Encuesta.csproj", "{DFC4CE26-4902-4994-9FB2-B5C4BD948A8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio6_EncuestaTransporte", "Ejercicio6\Ejercicio6_EncuestaTransporte.csproj", "{DFC4CE26-4902-4994-9FB2-B5C4BD948A8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio9_Infracciones", "Ejercicio9\Ejercicio9_Infracciones.csproj", "{CD7BF8A7-8E1F-42DE-B098-595B24DF9495}"
 EndProject

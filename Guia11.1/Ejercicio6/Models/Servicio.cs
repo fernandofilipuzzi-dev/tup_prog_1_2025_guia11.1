@@ -3,38 +3,83 @@ namespace Ejercicio6.Models
 {
     internal class Servicio
     {
-        public int indecisos;
-        public int negativos;
-        public int positivos;
-        public double PorcentajeIndecisos;
-        public double PorcentajeNegativos;
-        public double PorcentajePositivos;
+        public int CantidadEncuestados;
 
-        public void RegistrarOpinion(int opinion)
+        int contadorBici;
+        int contadorMoto;
+        int contadorAuto;
+        int contadorPublico;
+
+        double acumuladorDistanciaBici;
+        double acumuladorDistanciaMoto;
+        double acumuladorDistanciaAuto;
+        double acumuladorDistanciaPublico;
+
+        public void RegistrarEncuesta(int tipoTransporte, double distancia)
         {
-            switch (opinion)
+            switch (tipoTransporte)
             {
                 case 1:
-                    negativos++;
+                    {
+                        acumuladorDistanciaBici += distancia;
+                        contadorBici++;
+                    }
                     break;
                 case 2:
-                    positivos++;
+                    {
+                        acumuladorDistanciaMoto += distancia;
+                        contadorMoto++;
+                    }
                     break;
-                default:
-                    indecisos++;
+                case 3:
+                    {
+                        acumuladorDistanciaAuto += distancia;
+                        contadorAuto++;
+                    }
+                    break;
+                case 4:
+                    {
+                        acumuladorDistanciaPublico += distancia;
+                        contadorPublico++;
+                    }
                     break;
             }
+            CantidadEncuestados++;
         }
-        public void ProcesarEncuesta()
-        {
-            double total = indecisos + negativos + positivos;
 
-            if (positivos > 0)
+        public double CalcularPromedioPorTipo(int tipoTransporte)
+        {
+            double promedio = 0;
+            
+            switch (tipoTransporte)
             {
-                PorcentajeIndecisos = 100.0 * indecisos / total;
-                PorcentajeNegativos = 100.0 * negativos / total;
-                PorcentajePositivos = 100.0 * positivos / total;
+                case 1:
+                    {
+                        if(contadorBici>0)
+                            promedio = 1.0 * acumuladorDistanciaBici / contadorBici;
+                    }
+                    break;
+                case 2:
+                    {
+                        if(contadorMoto>0)
+                            promedio = 1.0 *acumuladorDistanciaMoto / contadorMoto;
+                    }
+                    break;
+                case 3:
+                    {
+                        if(contadorAuto>0)
+                            promedio = 1.0 *acumuladorDistanciaAuto / contadorAuto;
+                    }
+                    break;
+                case 4:
+                    {
+                        if(contadorPublico>0)
+                            promedio = 1.0 *acumuladorDistanciaPublico / contadorPublico;
+                    }
+                    break;
             }
+
+            return promedio;
         }
     }
 }
