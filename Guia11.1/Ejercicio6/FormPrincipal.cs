@@ -41,7 +41,7 @@ namespace Ejercicio6
   Automóvil:  {servicio.CalcularPromedioPorTipo(3):f2}
   Transporte público: {servicio.CalcularPromedioPorTipo(4):f2}
 
-  Total de encuestados:
+Total de encuestados:
             {servicio.CantidadEncuestados}
             ";
 
