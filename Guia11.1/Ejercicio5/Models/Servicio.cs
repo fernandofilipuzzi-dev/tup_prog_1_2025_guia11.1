@@ -5,8 +5,7 @@ namespace Ejercicio5.Models
     {
         public int DeterminarLosDíasDelMes(int mes, int año)
         {
-            //este algoritmose puede mejorar - pero hay que cambiar la estrategia.
-
+          
             int dias;
 
             #region determinar si espar
@@ -43,7 +42,7 @@ namespace Ejercicio5.Models
                 }
                 else
                 {
-                    return 30;
+                    return 31;
                 }
                 #endregion
             }

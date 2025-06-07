@@ -238,7 +238,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4);
             Name = "FormPrincipal";
-            Text = "Form1";
+            Text = "Tenis";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

@@ -50,31 +50,31 @@ namespace Ejercicio6.Models
         public double CalcularPromedioPorTipo(int tipoTransporte)
         {
             double promedio = 0;
-            
+
             switch (tipoTransporte)
             {
                 case 1:
                     {
-                        if(contadorBici>0)
+                        if (contadorBici > 0)
                             promedio = 1.0 * acumuladorDistanciaBici / contadorBici;
                     }
                     break;
                 case 2:
                     {
-                        if(contadorMoto>0)
-                            promedio = 1.0 *acumuladorDistanciaMoto / contadorMoto;
+                        if (contadorMoto > 0)
+                            promedio = 1.0 * acumuladorDistanciaMoto / contadorMoto;
                     }
                     break;
                 case 3:
                     {
-                        if(contadorAuto>0)
-                            promedio = 1.0 *acumuladorDistanciaAuto / contadorAuto;
+                        if (contadorAuto > 0)
+                            promedio = 1.0 * acumuladorDistanciaAuto / contadorAuto;
                     }
                     break;
                 case 4:
                     {
-                        if(contadorPublico>0)
-                            promedio = 1.0 *acumuladorDistanciaPublico / contadorPublico;
+                        if (contadorPublico > 0)
+                            promedio = 1.0 * acumuladorDistanciaPublico / contadorPublico;
                     }
                     break;
             }
